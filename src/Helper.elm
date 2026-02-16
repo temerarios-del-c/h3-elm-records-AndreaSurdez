@@ -146,20 +146,19 @@ main : Html.Html msg
 main =
     Html.div
         []
-        [ Html.h1
+        [ Html.h1 [] [ Html.text "My laptop" ]  -- ¡Texto exacto con "l" minúscula!
+        , Html.div
             []
-            [ Html.text "My Laptop"
-            , Html.div
+            [ Html.ul
                 []
-                [ Html.ul
-                    []
-                    [ Html.li [] [ Html.text ("Ram: " ++ myLaptop.ram) ], Html.li [] [ Html.text ("Modelo: " ++ myLaptop.model) ], Html.li [] [ Html.text ("Marca: " ++ myLaptop.brand) ], Html.li [] [ Html.text ("Pulgadas: " ++ myLaptop.screenSize) ] ]
+                [ Html.li [] [ Html.text ("Ram: " ++ myLaptop.ram) ]
+                , Html.li [] [ Html.text ("Modelo: " ++ myLaptop.model) ]
+                , Html.li [] [ Html.text ("Marca: " ++ myLaptop.brand) ]
+                , Html.li [] [ Html.text ("Pulgadas: " ++ myLaptop.screenSize) ]
                 ]
             ]
         ]
-
-
-
+        
 --ejercicios para practicar
 -- 1.1 Define un record llamado "libro" con estos campos:
 --     titulo : String
