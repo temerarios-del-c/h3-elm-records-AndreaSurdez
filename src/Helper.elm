@@ -146,7 +146,7 @@ main : Html.Html msg
 main =
     Html.div
         []
-        [ Html.h1 [] [ Html.text "My laptop" ]  -- ¡Texto exacto con "l" minúscula!
+        [ Html.h1 [] [ Html.text "My laptop" ] -- ¡Texto exacto con "l" minúscula!
         , Html.div
             []
             [ Html.ul
@@ -158,7 +158,9 @@ main =
                 ]
             ]
         ]
-        
+
+
+
 --ejercicios para practicar
 -- 1.1 Define un record llamado "libro" con estos campos:
 --     titulo : String
